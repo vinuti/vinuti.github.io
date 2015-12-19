@@ -1,0 +1,1 @@
+@keyframes header-show{0%{opacity:0}100%{opacity:1}}.header{position:fixed;top:0;right:4.86111%;left:4.86111%;align-items:center;animation:header-show 0.2s both;display:flex;width:auto;height:15.55556%}.header__title{font-size:1rem}
