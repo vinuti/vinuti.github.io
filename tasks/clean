@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+main() {
+  rm -fr public
+  rm -f *.html
+  rm -f npm-debug.log
+}
+
+. tasks/execute

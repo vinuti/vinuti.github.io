@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+main() {
+  local PARTIALS=$(find client/templates/partials -name '*.html' | paste -s -d ':' -)
+  local TEMPLATES=$(find client/templates -maxdepth 1 -name *.html)
+
+  for TEMPLATE in $TEMPLATES; do
+    TEMPLATE=$(basename $TEMPLATE)
+
+    if [ ! -z "$PARTIALS" ]; then
+      PARTIALS="-p ${PARTIALS/:/ -p }"
+    fi
+
+    node_modules/mustache/bin/mustache $PARTIALS package.json "client/templates/${TEMPLATE}" > "${TEMPLATE}"
+    node_modules/html-minifier/cli.js --collapse-whitespace --output "${TEMPLATE}" --remove-comments "${TEMPLATE}"
+  done
+}
+
+. tasks/execute
