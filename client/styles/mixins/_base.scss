@@ -4,7 +4,6 @@
 
 a, button {
   outline: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 body, button, h1, h2, h3, h4, h5, h6, hr, ol, p, ul {
@@ -31,10 +30,14 @@ button {
   font-size: 1rem;
 }
 
+h1 {
+  font-weight: inherit;
+}
+
 html {
-  color: rgb(0, 0, 0);
-  font-family: $helvetica;
+  color: rgb(0, 14, 25);
+  font-family: Futura, sans-serif;
   font-size: 16px;
-  line-height: $golden;
-  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  line-height: 1.46667;
 }
