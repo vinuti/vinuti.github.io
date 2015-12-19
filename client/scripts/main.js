@@ -1,17 +1,7 @@
 !function() {
   'use strict';
 
-  var loadMinorStyles = function() {
-    var link = document.createElement('link');
-
-    link.addEventListener('load', link.removeAttribute.bind(link, 'media'));
-
-    link.href = 'public/styles/minor.css';
-    link.media = 'none';
-    link.rel = 'stylesheet';
-
-    document.head.appendChild(link);
-  };
+  var loadMinorStyles = require('./load-minor-styles');
 
   var main = function() {
     loadMinorStyles();
