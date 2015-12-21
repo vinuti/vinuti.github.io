@@ -27,13 +27,20 @@
     &::before {
       position: absolute;
       top: 50%;
-      left: 50%;
+      right: 0.75rem;
+      left: 0.75rem;
       background-color: currentColor;
       content: '';
       display: block;
-      transform: translate(-50%, 0.6rem);
-      width: 80%;
+      opacity: 0;
+      transform: translateY(0.6em);
+      transition: opacity 0.2s;
+      width: auto;
       height: 1px;
+    }
+
+    &:hover::before {
+      opacity: 1;
     }
   }
 
