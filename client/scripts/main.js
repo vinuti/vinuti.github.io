@@ -5,6 +5,14 @@
 
   var main = function() {
     loadMinorStyles();
+
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (exception) {
+      console.error('typekit', exception);
+    }
   };
 
   document.addEventListener('DOMContentLoaded', main);
