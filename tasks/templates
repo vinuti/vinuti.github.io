@@ -8,7 +8,7 @@ main() {
     TEMPLATE=$(basename $TEMPLATE)
 
     if [ ! -z "$PARTIALS" ]; then
-      PARTIALS="-p ${PARTIALS/:/ -p }"
+      PARTIALS="-p ${PARTIALS//:/ -p }"
     fi
 
     node_modules/mustache/bin/mustache $PARTIALS package.json "client/templates/${TEMPLATE}" > "${TEMPLATE}"
