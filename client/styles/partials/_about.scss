@@ -1,0 +1,23 @@
+.about {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 14, 25);
+  color: rgb(255, 255, 255);
+  display: block;
+  width: auto;
+  height: auto;
+  z-index: 5;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.875rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 41rem;
+  }
+}

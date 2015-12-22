@@ -1,0 +1,22 @@
+.landing {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 15.55556vh;
+  width: 90.27778%;
+  height: 100%;
+
+  &__image {
+    object-fit: cover;
+    width: 83.07692%;
+    height: 100%;
+  }
+
+  &__title {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    margin-left: -4.86111vw;
+    width: 35.15385%;
+    height: 90%;
+  }
+}
