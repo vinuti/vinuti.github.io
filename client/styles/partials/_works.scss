@@ -1,0 +1,34 @@
+.works {
+  animation: show 0.2s both;
+  display: block;
+  margin: 0 auto 14.375rem;
+  width: 90.27778%;
+
+  &__item {
+    background-color: rgb(204, 204, 204);
+    float: left;
+    margin-top: 1.25rem;
+    padding-top: calc(50% - 0.625rem);
+    width: calc(50% - 0.625rem);
+
+    &:nth-child(odd) {
+      transform: translateY(calc(18.75% - 1.25rem));
+      margin-right: 0.625rem;
+    }
+
+    &:nth-child(even) {
+      transform: translateY(calc(-25% - 1.25rem));
+      margin-left: 0.625rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+}

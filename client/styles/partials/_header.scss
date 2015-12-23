@@ -1,19 +1,9 @@
-@keyframes header-show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .header {
   position: fixed;
   top: 0;
   right: 4.86111%;
   left: 4.86111%;
-  animation: header-show 0.2s both;
+  animation: show 0.2s both;
   display: block;
   font-size: 1.4375rem;
   width: auto;
