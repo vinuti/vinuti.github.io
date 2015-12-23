@@ -15,13 +15,15 @@
   left: 4.86111%;
   animation: header-show 0.2s both;
   display: block;
+  font-size: 1.4375rem;
   width: auto;
   height: 15.55556%;
 
   &__button {
     position: relative;
     color: currentColor;
-    font-size: 1rem;
+    font-family: inherit;
+    font-size: inherit;
     padding: 0 0.75rem;
     height: 100%;
 
@@ -74,7 +76,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    font-size: 1rem;
+    font-size: inherit;
     transform: translateY(-50%);
   }
 }
