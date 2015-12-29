@@ -19,6 +19,10 @@ button, ol, ul {
   padding: 0;
 }
 
+a:active, a:focus, a:hover, a:link, a:visited {
+  color: currentColor;
+}
+
 body {
   background: rgb(255, 255, 255);
 }
@@ -40,4 +44,8 @@ html {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.46667;
+}
+
+.hidden {
+  display: none;
 }
